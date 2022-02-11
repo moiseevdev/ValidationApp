@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ValidationApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordLabel" destination="Kkg-bF-xqG" id="67z-o2-cRf"/>
+                <outlet property="confirmPasswordTextField" destination="5df-uy-s6d" id="mma-sF-svX"/>
+                <outlet property="emailLabel" destination="Q60-b9-VDE" id="q8I-O3-G9h"/>
+                <outlet property="emailTextField" destination="j4P-Qa-Vd9" id="zZ0-TU-8BY"/>
+                <outlet property="passwordLabel" destination="Mu8-zR-Nua" id="dCh-OS-xCx"/>
+                <outlet property="passwordTextField" destination="ovZ-Fw-08j" id="tUF-dX-Grc"/>
+                <outlet property="readyButton" destination="7r4-W7-7Ec" id="VwC-vv-E9A"/>
+                <outlet property="view" destination="mGr-qL-Et1" id="Qcb-pG-2Ir"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mGr-qL-Et1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vaw-MW-eab">
+                    <rect key="frame" x="20" y="194" width="374" height="50.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4P-Qa-Vd9">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q60-b9-VDE">
+                            <rect key="frame" x="0.0" y="36" width="50" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14.5" id="rVS-PS-gxG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="j4P-Qa-Vd9" secondAttribute="trailing" id="1Gd-G8-GOT"/>
+                        <constraint firstItem="j4P-Qa-Vd9" firstAttribute="leading" secondItem="vaw-MW-eab" secondAttribute="leading" id="RUT-7F-Sks"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5lQ-Yp-lB1">
+                    <rect key="frame" x="20" y="252" width="374" height="50.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ovZ-Fw-08j">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu8-zR-Nua">
+                            <rect key="frame" x="0.0" y="36" width="50" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14.5" id="EcC-PJ-6kD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ovZ-Fw-08j" secondAttribute="trailing" id="RjY-zd-C4S"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ksd-jg-OWR">
+                    <rect key="frame" x="20" y="310" width="374" height="50.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердить пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5df-uy-s6d">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-bF-xqG">
+                            <rect key="frame" x="0.0" y="36" width="50" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14.5" id="YeZ-TS-rO5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5df-uy-s6d" secondAttribute="trailing" id="KO9-n8-OJB"/>
+                        <constraint firstItem="5df-uy-s6d" firstAttribute="top" secondItem="Ksd-jg-OWR" secondAttribute="top" id="sml-XQ-Nym"/>
+                        <constraint firstItem="5df-uy-s6d" firstAttribute="leading" secondItem="Ksd-jg-OWR" secondAttribute="leading" id="tYs-vy-UVu"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-W7-7Ec">
+                    <rect key="frame" x="20" y="404.5" width="374" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="0xF-Om-6Zc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="tintColor" red="0.89416408540000003" green="0.89400106670000001" blue="0.90196186300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Готово"/>
+                    <connections>
+                        <action selector="pressReadyButton:" destination="-1" eventType="touchUpInside" id="pgI-74-FB1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="oqK-yM-kCO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7r4-W7-7Ec" firstAttribute="top" secondItem="Ksd-jg-OWR" secondAttribute="bottom" constant="44" id="02z-aT-olk"/>
+                <constraint firstItem="5lQ-Yp-lB1" firstAttribute="top" secondItem="vaw-MW-eab" secondAttribute="bottom" constant="7.5" id="3V0-cb-N2r"/>
+                <constraint firstItem="vaw-MW-eab" firstAttribute="leading" secondItem="oqK-yM-kCO" secondAttribute="leading" constant="20" id="DIC-7j-jbp"/>
+                <constraint firstItem="Ksd-jg-OWR" firstAttribute="top" secondItem="5lQ-Yp-lB1" secondAttribute="bottom" constant="7.5" id="Fi4-PX-MeA"/>
+                <constraint firstItem="oqK-yM-kCO" firstAttribute="trailing" secondItem="Ksd-jg-OWR" secondAttribute="trailing" constant="20" id="HNd-Ra-cFX"/>
+                <constraint firstItem="vaw-MW-eab" firstAttribute="top" secondItem="oqK-yM-kCO" secondAttribute="top" constant="150" id="Hvf-9A-Z3b"/>
+                <constraint firstItem="oqK-yM-kCO" firstAttribute="trailing" secondItem="vaw-MW-eab" secondAttribute="trailing" constant="20" id="K8w-QP-3RI"/>
+                <constraint firstItem="7r4-W7-7Ec" firstAttribute="leading" secondItem="oqK-yM-kCO" secondAttribute="leading" constant="20" id="MES-Ml-3Oo"/>
+                <constraint firstItem="oqK-yM-kCO" firstAttribute="trailing" secondItem="7r4-W7-7Ec" secondAttribute="trailing" constant="20" id="VdH-dl-PcO"/>
+                <constraint firstItem="oqK-yM-kCO" firstAttribute="trailing" secondItem="5lQ-Yp-lB1" secondAttribute="trailing" constant="20" id="hcS-S9-ePj"/>
+                <constraint firstItem="Ksd-jg-OWR" firstAttribute="leading" secondItem="oqK-yM-kCO" secondAttribute="leading" constant="20" id="tT7-Tz-xSU"/>
+                <constraint firstItem="5lQ-Yp-lB1" firstAttribute="leading" secondItem="oqK-yM-kCO" secondAttribute="leading" constant="20" id="xGZ-mC-u7G"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
